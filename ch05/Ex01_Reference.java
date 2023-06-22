@@ -23,8 +23,8 @@ public class Ex01_Reference {
 		System.out.println(s == null); 			// true
 		
 		String t = "";
-		System.out.println(t.length());
-		
+		System.out.println(t.length());			// 0
+//		System.out.println(s.length());		// NullPointerException
 
 	}
 
