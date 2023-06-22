@@ -77,10 +77,7 @@ public class Ex13_NestedFor {
 			for (int k = 0; k < n - i; k++) {
 				System.out.print("*");
 			}
-			for (int k = 0; k < i; k++) {
-				System.out.print(" ");
-			}
-
+			
 			System.out.println();
 		}
 		
@@ -100,7 +97,7 @@ public class Ex13_NestedFor {
 		}
 
 		
-		for (int i = n; i >= 0; i--) {
+		for (int i = n - 1; i >= 0; i--) {
 
 			for (int k = 0; k < n - i; k++) {
 				System.out.print(" ");
