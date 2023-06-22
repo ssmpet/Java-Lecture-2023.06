@@ -89,29 +89,27 @@ public class Ex13_NestedFor {
 		n = 5;
 		// 홀수
 		for (int i = 0; i < n; i++) {
-			for (int k = 0; k < n - i ; k++) {
+			for (int k = 0; k < n - i - 1; k++) {
 				System.out.print(" ");				
 			}
-			for (int k = 0; k < 2*i + 1 ; k++) {
+			for (int k = 0; k < 2*i + 1; k++) {
 				System.out.print("*");				
 			}
-			for (int k = 0; k < n - i ; k++) {
-				System.out.print(" ");				
-			}
+			
 			System.out.println();
 		}
-		System.out.println();
+
 		
-		for (int i = n-1; i <= 0; i--) {
-			for (int k = i; k < n - i ; k--) {
-				System.out.print(" ");				
+		for (int i = n; i >= 0; i--) {
+
+			for (int k = 0; k < n - i; k++) {
+				System.out.print(" ");
 			}
-			for (int k = 0; k < 2*i + 1 ; k++) {
-				System.out.print("*");				
+
+			for (int k = 0; k < 2 * i - 1; k++) {
+				System.out.print("*");
 			}
-			for (int k = i; k < n - i ; k--) {
-				System.out.print(" ");				
-			}
+
 			System.out.println();
 		}
 
