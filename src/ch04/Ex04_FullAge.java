@@ -10,7 +10,7 @@ public class Ex04_FullAge {
 		int year = Integer.parseInt(birth[0]);
 		int month = Integer.parseInt(birth[1]);
 		int day = Integer.parseInt(birth[2]);
-		
+
 //		Scanner scan = new Scanner(System.in);
 //		System.out.print("생년 > ");
 //		year = scan.nextInt();
@@ -26,14 +26,14 @@ public class Ex04_FullAge {
 		int nowMon = today.getMonthValue();
 		int nowDay = today.getDayOfMonth();
 		System.out.printf("현재날짜 : %d-%02d-%02d\n", nowYear, nowMon, nowDay);
-		
+
 		int age = nowYear - year;
 
-		if ( month > nowMon || ( month<=nowMon && day >= nowDay) )
+		if (month > nowMon || (month <= nowMon && day >= nowDay))
 			age -= 1;
 
 		System.out.printf("만나이 : %d세 입니다.", age);
-		
+
 	}
 
 }
