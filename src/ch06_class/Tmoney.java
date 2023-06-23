@@ -1,6 +1,7 @@
 package ch06_class;
 
 public class Tmoney {
+	
 	private int age;
 	private int cash;
 	public static final int CHILD_FARE = 730;
