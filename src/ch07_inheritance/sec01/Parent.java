@@ -3,7 +3,7 @@ package ch07_inheritance.sec01;
 public class Parent {
 	int parentInt;
 	
-	Parent() {	}
+	Parent() {}
 
 	Parent(int parentInt) {
 		this.parentInt = parentInt;
