@@ -1,4 +1,5 @@
 package ch09_nested.sec02_anonymous_interface;
+
 import ch08_interface.sec01.RemoteControllable;
 
 public class Main {
@@ -21,7 +22,6 @@ public class Main {
 				System.out.println("익명구현객체 setVolume(" + volume + ")");
 			}
 		};
-
 		
 		rc.turnOn();
 		rc.setVolume(10);
