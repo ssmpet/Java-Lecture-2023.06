@@ -4,8 +4,8 @@ public class Ex04_ClassCast {
 
 	public static void main(String[] args) {
 		
-		Animal a2 = new Dog();
 		Animal a1 = new Cat();
+		Animal a2 = new Dog();
 		
 		Cat cat;
 		Dog dog;
@@ -21,9 +21,10 @@ public class Ex04_ClassCast {
 		}
 
 	}
+}
+
 
 class Animal {}
-class Dog extends Animal {}
 class Cat extends Animal {}
+class Dog extends Animal {}
 
-}
