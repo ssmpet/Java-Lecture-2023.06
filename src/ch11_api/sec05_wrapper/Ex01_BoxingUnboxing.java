@@ -18,7 +18,7 @@ public class Ex01_BoxingUnboxing {
 
 		System.out.println(val1 == 1000);
 		System.out.println(obj1.equals(1000));
-		
+
 	}
 
 }

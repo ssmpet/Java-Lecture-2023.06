@@ -21,7 +21,7 @@ public class Ex02_ObjectSort {
 		Arrays.sort(members);
 		for (Member m: members) 
 			System.out.println(m);
-		
+
 		System.out.println("================================");		
 		
 		// Member 오름차순 정렬, Member의 name 값에  따른 정렬		
