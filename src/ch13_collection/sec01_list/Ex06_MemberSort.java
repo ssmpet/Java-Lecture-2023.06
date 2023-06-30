@@ -8,7 +8,7 @@ public class Ex06_MemberSort {
 	public static void main(String[] args) {
 		
 		List<Member> list = new ArrayList<>();
-		
+
 		list.add(new Member(23,	"James"));
 		list.add(new Member(28, "Maria"));
 		list.add(new Member(28, "Brian"));
