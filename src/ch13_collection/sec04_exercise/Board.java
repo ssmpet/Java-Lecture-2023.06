@@ -9,6 +9,7 @@ public class Board {
 		this.title = title;
 		this.content = content;
 	}
+	
 	public String getTitle() {
 		return title;
 	}

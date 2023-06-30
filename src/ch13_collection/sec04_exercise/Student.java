@@ -29,7 +29,8 @@ public class Student {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(studentNum);		
+//		return Objects.hash(studentNum);		
+		return this.studentNum;		
 	}
 	
 	@Override
@@ -39,6 +40,11 @@ public class Student {
 		Student sd = (Student) obj;
 
 		return this.studentNum == sd.studentNum;
+	}
+
+	@Override
+	public String toString() {
+		return studentNum + ": " + name;
 	}
 
 }

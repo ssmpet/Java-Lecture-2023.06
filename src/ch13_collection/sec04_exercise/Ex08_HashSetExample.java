@@ -12,8 +12,10 @@ public class Ex08_HashSetExample {
 		set.add(new Student(2, "신용권"));
 		set.add(new Student(1, "조민우"));
 		
-		for ( Student sd: set)
-			System.out.println(sd.getStudentNum() + ":" + sd.getName());
+		for ( Student sd: set) {
+			System.out.println(sd);
+//			System.out.println(sd.hashCode());
+		}
 
 	}
 

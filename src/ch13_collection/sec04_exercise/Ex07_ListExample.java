@@ -12,7 +12,7 @@ public class Ex07_ListExample {
 		List<Board> list = dao.getBoardList();
 		
 		for(Board board : list)
-			System.out.println(board.getTitle() + "-" + board.getContent());
+			System.out.println(board);
 	}
 
 }
