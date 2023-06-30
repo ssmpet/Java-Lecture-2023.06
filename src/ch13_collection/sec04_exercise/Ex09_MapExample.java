@@ -12,6 +12,9 @@ public class Ex09_MapExample {
 		map.put("blue", 96);
 		map.put("hong", 86);
 		map.put("white", 92);
+		map.put("blue", 80);
+		System.out.println(map.size());
+		map.forEach((k, v) -> System.out.println(k + " : " + v));
 
 		String nameString = null;
 		int maxScore = 0;
