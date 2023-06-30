@@ -19,3 +19,20 @@ public class MemberComparator implements Comparator<Member>{
 	}
 
 }
+
+// 같은 파일 내면 public을 빼 줘라.
+//class MemberAgeComparator implements Comparator<Member>{
+//	@Override
+//	public int compare(Member m1, Member m2) {
+//		return m1.getAge() - m2.getAge();
+//	}	
+//}
+//
+//class MemberNameComparator  implements Comparator<Member>{
+//	@Override
+//	public int compare(Member m1, Member m2) {
+//		
+//		return -m1.getName().compareTo(m2.getName());
+//	}
+//	
+//}

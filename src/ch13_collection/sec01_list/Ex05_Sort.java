@@ -50,12 +50,8 @@ public class Ex05_Sort {
 		// 미리 정의된 순서: 역순
 		list.sort(Comparator.reverseOrder());
 		list.forEach(x -> System.out.println(x));
-		System.out.println();
 		
-		// Comparator class를 만들어서 비교
-		list.sort(new MemberComparator());
-		list.forEach(x -> System.out.println(x));
-		System.out.println();
+		
 		
 	}
 
