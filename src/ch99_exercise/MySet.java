@@ -1,8 +1,11 @@
 package ch99_exercise;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class MySet{
+import ch13_collection.sec01_list.Member;
+
+public class MySet implements Comparator<MySet>{
 	private String word;
 	private int count;
 	
@@ -49,6 +52,12 @@ public class MySet{
 		}		
 
 		return this.word.equals(set.getWord());
+	}
+
+	@Override
+	public int compare(MySet o1, MySet o2) {
+		
+		return -(o1.getCount() - o2.getCount());
 	}
 
 	

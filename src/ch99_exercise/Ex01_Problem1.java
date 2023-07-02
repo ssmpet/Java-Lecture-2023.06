@@ -1,7 +1,11 @@
 package ch99_exercise;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -16,6 +20,8 @@ import ch13_collection.sec02_set.Member;
 public class Ex01_Problem1 {
 
 	public static void main(String[] args) {
+		
+		
 		String text = "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?";
 		
 		System.out.println(text.length());		
@@ -26,15 +32,22 @@ public class Ex01_Problem1 {
 		String[] arr = text.split(" ");
 		System.out.println("단어 갯수: " + arr.length);
 		
-		// 고유 단어의 갯수
-		Set<MySet> set = new HashSet<>();
+		text2(arr);
 		
-		for (String word : arr) {
-			set.add(new MySet(word));
-		}
+		
+//		// 고유 단어의 갯수
+//		Set<MySet> set = new HashSet<>();
+//
+//		for (String word : arr) {
+//			set.add(new MySet(word));
+//		}
+//		
+		
 
-		for (MySet s: set)
-			System.out.println(s);
+		
+
+//		for (MySet s: set)
+//			System.out.println(s);
 
 	}
 	
@@ -46,7 +59,7 @@ public class Ex01_Problem1 {
 		System.out.println("고유 단어 갯수: " + arr.length);
 		
 		// 고유 단어가 몇번 사용되었는지
-		Map<String, Integer> map = new HashMap<>();
+		HashMap<String, Integer> map = new HashMap<>();
 		for (String word: arr) {
 			String newWord = word.toLowerCase();
 			if (map.containsKey(newWord)) 
@@ -55,8 +68,19 @@ public class Ex01_Problem1 {
 				map.put(newWord, 1);
 		}
 
-		// value로 sort
-//		map.forEach(<k, v> -> System.out.println(k + " : " + v));
+		// Key 로 sort
+//		System.out.println((Object[])map.keySet().toArray());
+//		Object[] arrKeys = map.keySet().toArray();
+//		Arrays.sort(arrKeys);
+//		for( Object key : arrKeys)
+//			System.out.println(key + ": " + map.get(key));
+//		
+		// Value 로 sort
+		List<String> keySets = new ArrayList<>(map.keySet());
+		keySets.sort((o1, o2)-> map.get(o2)-map.get(o1));
+		for (String key: keySets) {
+			System.out.println(key + " : " + map.get(key));
+		}
 
 	}
 
