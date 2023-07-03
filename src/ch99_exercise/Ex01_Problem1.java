@@ -75,11 +75,29 @@ public class Ex01_Problem1 {
 //		for( Object key : arrKeys)
 //			System.out.println(key + ": " + map.get(key));
 //		
-		// Value 로 sort
+		System.out.println("-------------------------------");
+		// Value 로 sort 방법1
 		List<String> keySets = new ArrayList<>(map.keySet());
 		keySets.sort((o1, o2)-> map.get(o2)-map.get(o1));
 		for (String key: keySets) {
 			System.out.println(key + " : " + map.get(key));
+		}
+
+		System.out.println("-------------------------------");
+		
+		// Value로 sort 방법2
+		List<Map.Entry<String, Integer>> entryList = new ArrayList<>(map.entrySet());
+		entryList.sort(Map.Entry.comparingByValue()); 	// value 오름차순 정렬
+		for(Map.Entry<String, Integer> me: entryList) {
+			System.out.println(me.getKey() + ": " + me.getValue());
+		}
+		
+		System.out.println("-------------------------------");
+		// Value로 sort 방법3
+		List<Map.Entry<String, Integer>> elist = new ArrayList<>(map.entrySet());
+		elist.sort(new MyComparator());
+		for(Map.Entry<String, Integer> me: elist) {
+			System.out.println(me.getKey() + ": " + me.getValue());
 		}
 
 	}

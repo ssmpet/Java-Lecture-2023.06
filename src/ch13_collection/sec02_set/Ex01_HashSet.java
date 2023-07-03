@@ -22,6 +22,7 @@ public class Ex01_HashSet {
 		set.remove("JSP");
 		System.out.println(set.contains("JSP"));
 		
+		
 	}
 
 }

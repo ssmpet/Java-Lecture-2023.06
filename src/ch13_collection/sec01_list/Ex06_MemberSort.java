@@ -1,6 +1,7 @@
 package ch13_collection.sec01_list;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Ex06_MemberSort {
@@ -28,7 +29,7 @@ public class Ex06_MemberSort {
 		list.sort(new MemberNameComparator());
 		list.forEach(x -> System.out.println(x));
 		System.out.println();
-
+		
 	}
 
 }
