@@ -22,7 +22,8 @@ INSERT INTO dateTable(id) VALUES (DEFAULT);
 INSERT INTO dateTable (`date`, `datetime`) VALUES
 	('2023-03-03', '2023-03-08 11:25:30'),
 	('2023-12-24', '2024-12-24 20:00:00');
-	
+# 220506, 20230525, 23-12-25 의 형식도 들어간다.
+
 	
 /*
  * 3. 데이터 조회
