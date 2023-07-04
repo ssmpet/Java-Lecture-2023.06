@@ -1,0 +1,14 @@
+[이클립스] eclipse ERMaster 설치
+
+Eclipse용 ERD 프로그램 ER MASTER 설치하기
+
+1). Help >> Install New Software.. 선택
+
+2) 업데이트 사이트 추가하기
+
+ADD 버튼을 클릭하여 사이트 정보 추가
+
+Name : ER Master
+
+Location: http://ermaster.sourceforge.net/update-site/
+
