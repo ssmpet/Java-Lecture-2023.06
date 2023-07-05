@@ -118,6 +118,9 @@ SELECT l.name, l.debut, r.title FROM girl_group AS l
 # 대륙별로 국가숫자, GNP의 합, 평균 국가별 GNP는?
 SELECT continent, COUNT(*) AS '국가수' , SUM(GNP) 'GNP합' , ROUND(AVG(GNP)) 'GNP평균'  FROM country
 	GROUP BY continent;
+SELECT continent, COUNT(*) AS noc , ROUND(SUM(GNP)) sumGnp , ROUND(AVG(GNP)) avgGnp 
+	FROM country
+	GROUP BY continent;
 	
 # 아시아 대륙에서 인구가 가장 많은 도시 10개를 내림차순으로 보여줄 것
 # (대륙명, 국가명, 도시명, 인구수)
@@ -128,6 +131,14 @@ SELECT l.Continent, l.Name '국가명', r.Name '도시명', r.Population '인구
 	ORDER BY r.population DESC
 	LIMIT 10;
 	
+SELECT r.Continent, r.Name, l.Name, l.Population FROM city AS l
+	JOIN country AS r
+	ON l.CountryCode=r.Code
+	WHERE r.Continent='Asia'
+	ORDER BY l.Population DESC
+	LIMIT 10;
+	
+	
 	
 # 전 세계에서 인구가 가장 많은 10개 도시에서 사용하는 공식언어는?
 # (도시명, 인구수, 언어명)
@@ -137,7 +148,7 @@ SELECT l.Name, l.Population, r.`Language` FROM  city AS l
 	WHERE r.IsOfficial='T'
 	ORDER BY l.Population DESC 
 	LIMIT 10;
-	
+
 	
 	
 
