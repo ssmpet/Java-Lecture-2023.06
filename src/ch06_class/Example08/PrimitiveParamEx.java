@@ -22,7 +22,7 @@ public class PrimitiveParamEx {
 		// 호출한 곳에서 아무런 영향을 받지 않는다.
 		data = 44;
 		System.out.println("dataChange 메서드 내의 값 : " + data);
-		
+		 
 		return;
 	}
 

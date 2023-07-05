@@ -7,7 +7,7 @@ public class CallStackEx {
 		// 콜스택(LIFO)은 후입선출이다.
 		// 콜스택은 후입선출이다.(ex.택시기사 아저씨의 동전통<->큐(Queue, FIFO, 파이프, 수도호스)
 		System.out.println("main()실행됨");
-		
+		 
 		// static은 static호출할 수 있다.
 		CallStackEx.first();
 		System.out.println("main()종료됨");
