@@ -17,6 +17,12 @@ public class PowerEx {
 		x = sc.nextInt();
 		System.out.print("몇승을 더할까요 : ");
 		n = sc.nextInt();
+		
+		
+		for(int i=1; i<=n; i++) {
+			result += power(x, i);
+		}
+		System.out.printf("%d의 %d승 까지의 합은 %d입니다.", x, n, result);
 
 		sc.close();
 		
