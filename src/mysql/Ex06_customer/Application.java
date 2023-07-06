@@ -13,7 +13,7 @@ public class Application {
 		while (run) {
 			System.out.println("+------------+------------+-------------+-------------+--------+");
 			System.out.println("| 1.고객목록 | 2.고객등록 | 3. 정보수정 | 4. 고객탈퇴 | 5.종료 |");
-			System.out.println("+------------+------------+-------------+-------------+--------+");
+			System.out.println("+------------+------------+--------1-----+-------------+--------+");
 			System.out.print("선택> ");
 			
 			int selectNo = Integer.parseInt(scan.nextLine());

@@ -23,7 +23,7 @@ public class CityDao {
 		try {
 			
 			Properties props = new Properties();
-			InputStream is = new FileInputStream("D:/JavaWorkspace/JavaLecture/src/mysql/mysql.properties");
+			InputStream is = new FileInputStream("D:/mysql.properties");
 			props.load(is);
 			is.close();
 			
