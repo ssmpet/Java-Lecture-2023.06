@@ -13,11 +13,11 @@ public class PersonEx {
 //		p.nation = "USA";
 //		p.age = 100;
 
-		System.out.println(p1);
-		System.out.println(p2);
-		System.out.println(p3);
+		System.out.println(p1.age);
+		System.out.println(p2.age);
+		System.out.println(p3.age);
 		System.out.println(Person.MAX_NUMBER);
-		
+
 	}
 
 }
