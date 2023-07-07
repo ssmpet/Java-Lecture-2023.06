@@ -182,7 +182,7 @@ public class KpopDao {
 	public List<GirlGroup> getGirlGroupList() {
 		List<GirlGroup> list = new ArrayList<GirlGroup>();
 		Connection conn = myConnection();
-		String sql = "select l.gid, l.name, l.debut, l.hit_song_id, r.title from girl_group as l join song as r on ON l.hit_song_id = r.sid";
+		String sql = "select l.gid, l.name, l.debut, l.hit_song_id, r.title from girl_group as l join song as r on l.hit_song_id = r.sid";
 		
 		try {
 			Statement stmt = conn.createStatement();
