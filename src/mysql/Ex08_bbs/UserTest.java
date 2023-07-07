@@ -3,7 +3,6 @@ package mysql.Ex08_bbs;
 import java.util.List;
 
 import org.mindrot.bcrypt.BCrypt;
-import org.w3c.dom.UserDataHandler;
 
 import mysql.Ex08_bbs.dao.UserDao;
 import mysql.Ex08_bbs.entity.User;
@@ -45,12 +44,12 @@ public class UserTest {
 //		for (User u: list)
 //			System.out.println(u);
 //		System.out.println();
-//
-//		UserService us = new UserService();
-//		System.out.println(us.login("james", "James"));		// CORRECT_LOGIN = 0
-//		System.out.println(us.login("maria", "1234"));		// WRONG_PASSWORD = 1
-//		System.out.println(us.login("brain", "brain"));		// UID_NOT_EXIST = 2
-//		
+
+		UserService us = new UserService();
+		System.out.println(us.login("james", "James"));		// CORRECT_LOGIN = 0
+		System.out.println(us.login("maria", "1234"));		// WRONG_PASSWORD = 1
+		System.out.println(us.login("brain", "brain"));		// UID_NOT_EXIST = 2
+
 
 	}
 
