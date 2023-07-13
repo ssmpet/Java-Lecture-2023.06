@@ -31,6 +31,7 @@ public class Ex04_IO {
 			System.out.println("정수 또는 실수를 입력하세요.");
 		}
 		
+		scan.close();
 				
 	}
 
