@@ -12,6 +12,7 @@ public class UserEx {
 		User user1 = User.getInstance();
 		User user2 = User.getInstance();
 
+		// 싱글톤 패턴을 사용하는 실제적인 예
 		Calendar cal = Calendar.getInstance();
 		Date d = cal.getTime();
 		System.out.println(d);
@@ -21,6 +22,7 @@ public class UserEx {
 		user1.add();
 		
 		// Object 클래스의 equals()주소 비교
+		// 객체의 == 연산은 주소값 비교연산 user1 == user2
 		if (user1.equals(user2)) {
 			System.out.println("같은 객체");
 		}else {
