@@ -18,7 +18,7 @@ public class Deck {
 		}
 		// 제대로 초기화가 이루어졌는지 내용을 직접 출력해봄
 		for (int j = 0; j < c.length; j++) {
-			System.out.printf("c[%d]의 무늬 : %d, c[%d]의 숫자 : %d",  
+			System.out.printf("c[%d]의 무늬 : %d, c[%d]의 숫자 : %d\n",  
 					j, c[j].kind, j, c[j].number);
 		}
 	}
@@ -35,8 +35,29 @@ public class Deck {
 	// Deck에서 카드 하나를 임의로 선택
 	public Card pick() {
 		int index = (int) (Math.random()*CARD_NUM);
-		System.out.println("임의로 뽑은 카드");
-		System.out.printf("%d", index);
+		System.out.print("\n임의로 뽑은 카드 => ");
+		System.out.printf("%d ", index);
 		return pick(index);
+	}
+	
+	public Deck() {
+		super();
+		System.out.println("Dect 생성자 호출");
+	}
+	
+	//단순히 섞는 메서드
+	public void shuffle() {
+		for(int n=0; n<1000; n++) {
+			int i = (int)(Math.random()*CARD_NUM);
+			Card temp = c[0];
+			c[0] = c[i];
+			c[i] = temp;
+		}
+		System.out.println("\n");
+		System.out.println("카드 섞은 후 결과");
+		for (int j = 0; j < c.length; j++) {
+			System.out.printf("c[%d]의 무늬 : %d, c[%d]의 숫자 : %d\n",  
+					j, c[j].kind, j, c[j].number);
+		}
 	}
 }
