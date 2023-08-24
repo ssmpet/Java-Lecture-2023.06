@@ -13,5 +13,6 @@ public class DeckEx {
 		c = d.pick(51);
 		System.out.print("카드 섞은 후에 제일 밑에 있는 카드 => " +  c);
 		System.out.print(d.pick());
+		System.out.println("");
 	}
 }
